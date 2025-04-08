@@ -1,5 +1,6 @@
 import ImgCard from "./Home/imgCard";
 import BioCard from "./Home/BioCard";
+import ProjectCard from "./Home/ProjectCard";
 
 export default function Home() {
   return (

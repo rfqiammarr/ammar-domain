@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${firaSans.className} min-h-screen bg-white text-gray-800`}>
         <Navbar />
-        <main className="max-w-8xl mx-auto px-20 mt-28">{children}</main>
+        <main className="max-w-8xl mx-auto px-20 mt-28 mb-50">{children}</main>
         <Footer />
       </body>
     </html>
