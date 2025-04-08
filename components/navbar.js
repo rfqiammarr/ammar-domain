@@ -19,7 +19,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="/img/logo/rams8bit.png" className="h-10" alt="Rifqi Ammar Ramadhan Logo" />
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Ammar's</span>
+          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Ammar&apos;s</span>
         </Link>
 
         {/* Contact Me button + hamburger */}
