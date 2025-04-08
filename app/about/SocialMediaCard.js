@@ -5,7 +5,7 @@ const SocialMediaCard = () => {
         <img class="rounded-t-lg" src="/img/profile/photo_Ammar.jpg" alt="Rifqi Ammar Ramadhan" />
         <div class="p-5">
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">My Social Media</h5>
-          <p class="mb-3 font-normal/4 tracking-normal text-gray-700 dark:text-gray-400">I’d love to hear from you! Connect with me on social media for collaborations, questions, or just a friendly chat.</p>
+          <p class="mb-3 font-normal/4 tracking-normal text-gray-700 dark:text-gray-400">I&rsquo;d love to hear from you! Connect with me on social media for collaborations, questions, or just a friendly chat.</p>
           <ul class="my-2 space-y-2">
             <li>
               <a
