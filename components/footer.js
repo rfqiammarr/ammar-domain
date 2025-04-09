@@ -3,15 +3,11 @@ import Link from "next/link";
 const footer = () => {
   return (
     <>
-      <footer className="m-4 dark:bg-gray-800 text-center mt-8">
+      <footer className="rounded-lg m-4 dark:bg-gray-800 text-center mt-8">
         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2025{" "}
             <Link href="/">
-              <p href="/" className="hover:underline">
-                {" "}
-              </p>
-              Rifqi Ammar Ramadhan
+              <p className="hover:underline"> </p>© 2025 Rifqi Ammar Ramadhan
             </Link>
             . All Rights Reserved.
           </span>
