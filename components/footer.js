@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const footer = () => {
   return (
     <>
@@ -5,7 +7,7 @@ const footer = () => {
         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2025{" "}
-            <a href="https://flowbite.com/" className="hover:underline">
+            <a href="https://rifqiammarramadhan.com/" className="hover:underline">
               Rifqi Ammar Ramadhan
             </a>
             . All Rights Reserved.
@@ -17,19 +19,19 @@ const footer = () => {
               </a>
             </li>
             <li>
-              <a href="/about" className="hover:underline me-4 md:me-6">
-                About
-              </a>
+              <Link href="/about">
+                <a className="hover:underline me-4 md:me-6">About</a>
+              </Link>
             </li>
             <li>
-              <a href="/blog" className="hover:underline me-4 md:me-6">
-                Blog
-              </a>
+              <Link href="/blog">
+                <a className="hover:underline me-4 md:me-6">Blog</a>
+              </Link>
             </li>
             <li>
-              <a href="/project" className="hover:underline">
-                Project
-              </a>
+              <Link href="/project">
+                <a className="hover:underline">Project</a>
+              </Link>
             </li>
           </ul>
         </div>
