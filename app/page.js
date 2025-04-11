@@ -13,7 +13,7 @@ export default function Home() {
           <BioCard />
         </div>
       </div>
-      <div className="gap-5 min-w-0 mt-20 py-15 px-14 w-full bg-gradient-to-r from-gray-50 from-15% via-sky-100 to-gray-50">
+      <div className="gap-5 min-w-0 mt-20 py-15 px-14 w-full bg-gradient-to-r from-gray-50 from-15% via-gray-100 to-gray-50">
         <h2 className="text-2xl font-semibold text-gray-700 dark:text-white mb-3">My Project</h2>
 
         <div className="flex flex-row c items-start gap-5 mt-15 mb-20">
