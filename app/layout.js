@@ -9,7 +9,7 @@ const firaSans = Fira_Sans({
 });
 
 export const metadata = {
-  title: "Rifqi Ammar Ramadhan",
+  title: "Rifqi Ammar Ramadhan - Home Page",
   description: "Rifqi Ammar Ramadhan personal website",
 };
 

@@ -13,6 +13,19 @@ export default function Home() {
           <BioCard />
         </div>
       </div>
+      <div className="gap-5 min-w-0 mt-20 py-15 px-14 w-full bg-gradient-to-r from-gray-50 from-15% via-sky-100 to-gray-50">
+        <h2 className="text-2xl font-semibold text-gray-700 dark:text-white mb-3">My Project</h2>
+
+        <div className="flex flex-row c items-start gap-5 mt-15 mb-20">
+          <ProjectCard />
+          <ProjectCard />
+        </div>
+        <div className="flex justify-center">
+          <button type="button" className="text-gray-900 border border-gray-500 hover:bg-black hover:text-white focus:ring-2 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-1xl px-5 py-3 text-center">
+            View More
+          </button>
+        </div>
+      </div>
     </>
   );
 }
