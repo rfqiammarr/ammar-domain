@@ -1,6 +1,9 @@
+"use client";
 import ImgCard from "./Home/imgCard";
 import BioCard from "./Home/BioCard";
 import ProjectCard from "./Home/ProjectCard";
+import { InteractiveHoverButton } from "../components/magicui/interactive-hover-button";
+import { Flex, Text, Card } from "@radix-ui/themes";
 
 export default function Home() {
   return (
@@ -13,18 +16,65 @@ export default function Home() {
           <BioCard />
         </div>
       </div>
-      <div className="gap-5 min-w-0 mt-20 py-15 px-14 w-full bg-gradient-to-r from-gray-50 from-15% via-gray-100 to-gray-50">
-        <h2 className="text-2xl font-semibold text-gray-700 dark:text-white mb-3">My Project</h2>
 
-        <div className="flex flex-row c items-start gap-5 mt-15 mb-20">
+      {/* <hr className="border-t border-gray-400 my-30" /> */}
+
+      <div className="gap-5 min-w-0 mt-30 ">
+        <h2 className="ml-14 text-2xl font-semibold text-gray-700 dark:text-white">My Project</h2>
+        <div className="flex flex-row justify-center items-start gap-5 mt-15 mb-5">
           <ProjectCard />
           <ProjectCard />
         </div>
         <div className="flex justify-center">
-          <button type="button" className="text-gray-900 border border-gray-500 hover:bg-black hover:text-white focus:ring-2 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-1xl px-5 py-3 text-center">
-            View More
-          </button>
+          <InteractiveHoverButton>View More</InteractiveHoverButton>
         </div>
+      </div>
+
+      {/* <hr className="border-t border-gray-400 my-30" /> */}
+
+      <div className="min-w-0 mt-25">
+        <h2 className="ml-25 text-2xl font-semibold text-gray-700 dark:text-white">Blog</h2>
+        <div className="flex justify-center">
+          <Flex direction="column" gap="6" maxWidth="900px">
+            <Card variant="surface">
+              <Text as="div" size="5" weight="bold">
+                Quick start Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, laudantium?
+              </Text>
+              <Text as="div" color="gray" size="3">
+                Start building your next project in minutes Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fuga. Lorem ipsum dolor sit amet.
+              </Text>
+              <Text as="div" color="gray" size="3">
+                Start building your next project in minutes Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fuga. Lorem ipsum dolor sit amet.
+              </Text>
+            </Card>
+            <Card variant="surface">
+              <Text as="div" size="5" weight="bold">
+                Quick start Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, laudantium?
+              </Text>
+              <Text as="div" color="gray" size="3">
+                Start building your next project in minutes Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fuga. Lorem ipsum dolor sit amet.
+              </Text>
+              <Text as="div" color="gray" size="3">
+                Start building your next project in minutes Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fuga. Lorem ipsum dolor sit amet.
+              </Text>
+            </Card>
+            <Card variant="surface">
+              <Text as="div" size="5" weight="bold">
+                Quick start Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, laudantium?
+              </Text>
+              <Text as="div" color="gray" size="3">
+                Start building your next project in minutes Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fuga. Lorem ipsum dolor sit amet.
+              </Text>
+              <Text as="div" color="gray" size="3">
+                Start building your next project in minutes Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fuga. Lorem ipsum dolor sit amet.
+              </Text>
+            </Card>
+          </Flex>
+        </div>
+        <div className="flex justify-center mt-7">
+          <InteractiveHoverButton>View More</InteractiveHoverButton>
+        </div>
+        {/* <hr className="border-t border-gray-400 my-30" /> */}
       </div>
     </>
   );
