@@ -18,64 +18,6 @@ export default function Home() {
       </div>
 
       {/* <hr className="border-t border-gray-400 my-30" /> */}
-
-      <div className="gap-5 min-w-0 mt-30 ">
-        <h2 className="ml-14 text-2xl font-semibold text-gray-700 dark:text-white">My Project</h2>
-        <div className="flex flex-row justify-center items-start gap-5 mt-15 mb-5">
-          <ProjectCard />
-          <ProjectCard />
-        </div>
-        <div className="flex justify-center">
-          <InteractiveHoverButton>View More</InteractiveHoverButton>
-        </div>
-      </div>
-
-      {/* <hr className="border-t border-gray-400 my-30" /> */}
-
-      <div className="min-w-0 mt-25">
-        <h2 className="ml-25 text-2xl font-semibold text-gray-700 dark:text-white">Blog</h2>
-        <div className="flex justify-center">
-          <Flex direction="column" gap="6" maxWidth="900px">
-            <Card variant="surface">
-              <Text as="div" size="5" weight="bold">
-                Quick start Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, laudantium?
-              </Text>
-              <Text as="div" color="gray" size="3">
-                Start building your next project in minutes Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fuga. Lorem ipsum dolor sit amet.
-              </Text>
-              <Text as="div" color="gray" size="3">
-                Start building your next project in minutes Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fuga. Lorem ipsum dolor sit amet.
-              </Text>
-            </Card>
-            <Card variant="surface">
-              <Text as="div" size="5" weight="bold">
-                Quick start Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, laudantium?
-              </Text>
-              <Text as="div" color="gray" size="3">
-                Start building your next project in minutes Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fuga. Lorem ipsum dolor sit amet.
-              </Text>
-              <Text as="div" color="gray" size="3">
-                Start building your next project in minutes Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fuga. Lorem ipsum dolor sit amet.
-              </Text>
-            </Card>
-            <Card variant="surface">
-              <Text as="div" size="5" weight="bold">
-                Quick start Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, laudantium?
-              </Text>
-              <Text as="div" color="gray" size="3">
-                Start building your next project in minutes Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fuga. Lorem ipsum dolor sit amet.
-              </Text>
-              <Text as="div" color="gray" size="3">
-                Start building your next project in minutes Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fuga. Lorem ipsum dolor sit amet.
-              </Text>
-            </Card>
-          </Flex>
-        </div>
-        <div className="flex justify-center mt-7">
-          <InteractiveHoverButton>View More</InteractiveHoverButton>
-        </div>
-        {/* <hr className="border-t border-gray-400 my-30" /> */}
-      </div>
     </>
   );
 }
