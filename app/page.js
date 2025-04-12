@@ -15,9 +15,8 @@ export default function Home() {
         <div className="mt-6">
           <BioCard />
         </div>
+        <InteractiveHoverButton className="mt-10">See My Project 🚀</InteractiveHoverButton>
       </div>
-
-      {/* <hr className="border-t border-gray-400 my-30" /> */}
     </>
   );
 }

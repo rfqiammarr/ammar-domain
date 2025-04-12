@@ -11,7 +11,7 @@ const firaSans = Fira_Sans({
 });
 
 export const metadata = {
-  title: "Rifqi Ammar Ramadhan - Home Page",
+  title: "Rifqi Ammar Ramadhan",
   description: "Rifqi Ammar Ramadhan personal website",
 };
 
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body className={`${firaSans.className} min-h-screen bg-white text-gray-800`}>
         <Theme>
           <Navbar />
-          <main className="max-w-8xl mx-auto px-20 mt-28 mb-50">{children}</main>
+          <main className="max-w-8xl mx-auto px-20 mt-28 mb-20">{children}</main>
           <Footer />
         </Theme>
       </body>
