@@ -1,4 +1,8 @@
 const SocialMediaCard = () => {
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:rifqiammarramadhan103@gmail.com';
+  };
+
   return (
     <>
       <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
@@ -25,7 +29,12 @@ const SocialMediaCard = () => {
               </a>
             </li>
             <li>
-              <a href="https://github.com/rfqiammarr" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+              <a
+                href="https://github.com/rfqiammarr"
+                class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                   <path
                     fill-rule="evenodd"
@@ -54,7 +63,12 @@ const SocialMediaCard = () => {
               </a>
             </li>
             <li>
-              <a href="https://x.com/rfqiammarr" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+              <a
+                href="https://x.com/rfqiammarr"
+                class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                   <path
                     fill-rule="evenodd"
@@ -66,7 +80,10 @@ const SocialMediaCard = () => {
               </a>
             </li>
             <li>
-              <div class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+              <button
+                onClick={handleEmailClick}
+                class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white w-full"
+              >
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                   <path
                     stroke="currentColor"
@@ -77,7 +94,7 @@ const SocialMediaCard = () => {
                   />
                 </svg>
                 <span class="flex-1 ms-3 whitespace-nowrap text-gray-700">rifqiammarramadhan103@gmail.com</span>
-              </div>
+              </button>
             </li>
           </ul>
         </div>

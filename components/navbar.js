@@ -6,6 +6,10 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathname = usePathname();
 
+  const handleContactClick = () => {
+    window.location.href = 'mailto:rifqiammarramadhan103@gmail.com';
+  };
+
   const navItems = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
@@ -26,6 +30,7 @@ const Navbar = () => {
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
+            onClick={handleContactClick}
             className="text-white bg-black hover:bg-gray-500 focus:ring-4 focus:outline-none focus:ring-gray-500 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Contact Me
@@ -56,7 +61,7 @@ const Navbar = () => {
                     href={item.href}
                     className={`text-lg block py-2 px-3 rounded-sm md:p-0 transition-colors duration-200
                         ${isActive ? "text-black dark:text-white font-semibold" : "text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white hover:bg-gray-100 md:hover:bg-transparent"}
-                    `}
+                        `}
                   >
                     {item.label}
                   </Link>
