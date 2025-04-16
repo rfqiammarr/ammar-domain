@@ -67,7 +67,7 @@ export default function About() {
                   </p>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
                     <li>Building .NET-based applications using C#, VB.NET, MS SQL Server, Blazor, and Syncfusion</li>
-                    <li>Developing HRIS solutions for PT Pertamina's non-ERP needs</li>
+                    <li>Developing HRIS solutions for PT Pertamina&rsquo;s non-ERP needs</li>
                     <li>Implementing robust and scalable enterprise applications</li>
                   </ul>
                 </div>
@@ -153,7 +153,7 @@ export default function About() {
                 <div className="absolute left-[-9px] top-0 w-4 h-4 bg-green-500 dark:bg-green-400 rounded-full"></div>
                 <div className="space-y-2">
                   <h4 className="text-xl font-medium text-gray-800 dark:text-gray-200">
-                    Bachelor's Degree in Computer System
+                    Bachelor&rsquo;s Degree in Computer System
                   </h4>
                   <p className="text-sm text-green-600 dark:text-green-400">
                     Gunadarma University • September 2015 - May 2020
