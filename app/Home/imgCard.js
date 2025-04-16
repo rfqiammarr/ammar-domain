@@ -1,6 +1,7 @@
 import confetti from "canvas-confetti";
+import Image from "next/image";
 
-const imgCard = () => {
+const ImgCard = () => {
   const handleClick = () => {
     const end = Date.now() + 3 * 1000; // 3 seconds
     const colors = ["#a786ff", "#fd8bbc", "#eca184", "#f8deb1"];
@@ -32,14 +33,24 @@ const imgCard = () => {
   };
 
   return (
-    <>
-      <div class="max-w-2xs bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-        <a onClick={handleClick}>
-          <img class="rounded-t-lg" src="/img/profile/rams8bit.png" alt="Ammar 8bits" />
-        </a>
-      </div>
-    </>
+    <div className="w-full bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 overflow-hidden">
+      <button 
+        onClick={handleClick} 
+        className="w-full relative aspect-square"
+        type="button"
+        aria-label="Trigger confetti animation"
+      >
+        <Image 
+          className="rounded-lg object-cover object-center transform hover:scale-105 transition-transform duration-300" 
+          src="/img/profile/rams8bit.png" 
+          alt="Ammar 8bits"
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 700px"
+          priority
+        />
+      </button>
+    </div>
   );
 };
 
-export default imgCard;
+export default ImgCard;
