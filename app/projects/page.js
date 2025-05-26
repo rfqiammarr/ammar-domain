@@ -91,7 +91,7 @@ export default function Projects() {
             </div>
             <div className="p-6">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                E-Commerce Platform
+                .NET Project Template Generator V.1
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 A full-stack e-commerce platform built with React and Node.js
