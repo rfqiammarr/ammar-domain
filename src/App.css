@@ -1,0 +1,5 @@
+/* Page-level overrides for portfolio layout */
+#root {
+  max-width: none;
+}
+main { display: block; }
