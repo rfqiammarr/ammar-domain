@@ -27,10 +27,10 @@ export default function About() {
             <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=1200&auto=format&fit=crop" alt="Portrait placeholder" loading="lazy" />
           </div>
           <div className="about-meta">
-            <div className="meta-row"><span>Location</span><strong>Jakarta, Indonesia</strong></div>
+            <div className="meta-row"><span>Location</span><strong>South Jakarta, Indonesia</strong></div>
             <div className="meta-row"><span>Role</span><strong>Full-Stack Developer</strong></div>
             <div className="meta-row"><span>Stack</span><strong>.NET, C#, VB.NET, MS SQL Server, Azure, Blazor, Javascript</strong></div>
-            <div className="meta-row"><span>Current</span><strong>Software Engineer @ Acme Tech</strong></div>
+            <div className="meta-row"><span>Current</span><strong>.NET Engineer @ Pertamina Persero</strong></div>
             <div className="meta-row"><span>Education</span><strong>Bachelor of Computer Science</strong></div>
           </div>
         </aside>
