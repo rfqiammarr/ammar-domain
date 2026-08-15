@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { projects } from '../data/data'
 import ProjectModal from './ProjectModal'
 
@@ -7,19 +7,39 @@ export default function Projects() {
   const [active, setActive] = useState(null)
   const openModal = (p) => { setActive(p); setOpen(true) }
   const closeModal = () => { setOpen(false); setActive(null) }
+
   return (
-    <section id="projects" className="section">
+    <section id="work" className="section work-section">
       <div className="container">
-        <h2>Projects</h2>
-        <div className="card-grid">
-          {projects.map((project) => (
-            <article key={project.slug} className="card" role="button" onClick={() => openModal(project)}>
-              <img src={project.imageUrl} alt={project.title} loading="lazy" />
-              <div className="card-body">
+        <div className="section-head">
+          <h2>Selected work</h2>
+          <p>Applications and systems delivered across frontend, backend, and data.</p>
+        </div>
+        <div className="work-grid">
+          {projects.map((project, index) => (
+            <article
+              key={project.slug}
+              className={`work-card${index === 0 ? ' work-card-featured' : ''}`}
+              role="button"
+              tabIndex={0}
+              onClick={() => openModal(project)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault()
+                  openModal(project)
+                }
+              }}
+            >
+              <div className="work-media">
+                <img src={project.imageUrl} alt={project.title} loading="lazy" />
+                <span className="work-view">View project</span>
+              </div>
+              <div className="work-body">
+                <span className="work-index">0{index + 1}</span>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <div className="card-tags">
-                  {project.tech.map((t) => (
+                <div className="work-tags">
+                  {project.tech.slice(0, 4).map((t) => (
                     <span className="chip" key={t}>{t}</span>
                   ))}
                 </div>
@@ -32,5 +52,3 @@ export default function Projects() {
     </section>
   )
 }
-
-

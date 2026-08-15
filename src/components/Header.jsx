@@ -1,21 +1,22 @@
-import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
+import { company } from '../data/data'
 
 export default function Header() {
   return (
     <header className="header">
       <div className="container">
         <div className="brand">
-          <a href="#home" className="logo">Ammar.dev</a>
+          <Link to="/" className="logo">{company.name}</Link>
         </div>
         <nav className="nav">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <Link to={{ pathname: '/', hash: 'services' }}>Services</Link>
+          <Link to={{ pathname: '/', hash: 'work' }}>Work</Link>
+          <NavLink to="/about" className={({ isActive }) => (isActive ? 'nav-active' : undefined)}>
+            About
+          </NavLink>
+          <Link to={{ pathname: '/', hash: 'contact' }}>Contact</Link>
         </nav>
       </div>
     </header>
   )
 }
-
-

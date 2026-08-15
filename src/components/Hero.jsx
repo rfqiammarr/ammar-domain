@@ -1,26 +1,18 @@
-import React from 'react'
+import { company } from '../data/data'
 
 export default function Hero() {
   return (
-    <section id="home" className="hero">
-      <div className="container hero-inner">
-        <div className="hero-text">
-          <h1>Hi, I'm Ammar</h1>
-          <p className="subtitle">Software Developer • .NET • Blazor • TypeScript • ML.NET • DevOps</p>
-          <p className="description" style={{lineHeight: '1.5' }}>I'm building scalable, efficient, and secure applications with cutting-edge technologies. Combining expertise in .NET, TypeScript, NextJs, Python, Blazor, VB.NET, Postgre and MS SQL Server to create innovative and impactful solutions.</p>
-          <div className="cta">
-            <a href="#projects" className="btn primary">View Projects</a>
-            <a href="#contact" className="btn">Contact Me</a>
-          </div>
-        </div>
-        <div className="hero-image">
-          <img src="/img/Hero/photo_Ammar.jpg" alt="Person" loading="lazy" 
-            style={{ width: '400px', height: 'auto', borderRadius: '12px', border: '1px solid #e5e7eb' }}
-          />
+    <section id="home" className="hero hero-marketing">
+      <div className="hero-atmosphere" aria-hidden="true" />
+      <div className="container hero-marketing-copy">
+        <p className="hero-eyebrow">{company.name}</p>
+        <h1>{company.tagline}</h1>
+        <p className="description">{company.description}</p>
+        <div className="cta">
+          <a href="#contact" className="btn primary">Get in touch</a>
+          <a href="#work" className="btn">See my work</a>
         </div>
       </div>
     </section>
   )
 }
-
-
