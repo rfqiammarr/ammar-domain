@@ -10,6 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@iconify-react/famicons": "^1.0.2",
+    "@iconify-react/fe": "^1.0.2",
+    "@iconify-react/grommet-icons": "^1.0.2",
+    "@iconify-react/logos": "^1.0.5",
+    "@iconify-react/skill-icons": "^1.0.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.18.2"

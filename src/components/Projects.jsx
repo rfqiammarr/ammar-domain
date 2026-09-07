@@ -1,32 +1,39 @@
-import { useState } from 'react'
-import { projects } from '../data/data'
-import ProjectModal from './ProjectModal'
+import { useState } from "react";
+import { projects } from "../data/data";
+import ProjectModal from "./ProjectModal";
 
 export default function Projects() {
-  const [open, setOpen] = useState(false)
-  const [active, setActive] = useState(null)
-  const openModal = (p) => { setActive(p); setOpen(true) }
-  const closeModal = () => { setOpen(false); setActive(null) }
+  const [open, setOpen] = useState(false);
+  const [active, setActive] = useState(null);
+  const openModal = (p) => {
+    setActive(p);
+    setOpen(true);
+  };
+  const closeModal = () => {
+    setOpen(false);
+    setActive(null);
+  };
 
   return (
-    <section id="work" className="section work-section">
+    <section id="work" className="section work-section projects-page">
       <div className="container">
         <div className="section-head">
-          <h2>Selected work</h2>
+          <p className="hero-eyebrow">Portfolio</p>
+          <h1>Projects built with purpose.</h1>
           <p>Applications and systems delivered across frontend, backend, and data.</p>
         </div>
         <div className="work-grid">
           {projects.map((project, index) => (
             <article
               key={project.slug}
-              className={`work-card${index === 0 ? ' work-card-featured' : ''}`}
+              className={`work-card${index === 0 ? " work-card-featured" : ""}`}
               role="button"
               tabIndex={0}
               onClick={() => openModal(project)}
               onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                  e.preventDefault()
-                  openModal(project)
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  openModal(project);
                 }
               }}
             >
@@ -40,7 +47,9 @@ export default function Projects() {
                 <p>{project.description}</p>
                 <div className="work-tags">
                   {project.tech.slice(0, 4).map((t) => (
-                    <span className="chip" key={t}>{t}</span>
+                    <span className="chip" key={t}>
+                      {t}
+                    </span>
                   ))}
                 </div>
               </div>
@@ -50,5 +59,5 @@ export default function Projects() {
         <ProjectModal open={open} onClose={closeModal} project={active} />
       </div>
     </section>
-  )
+  );
 }
