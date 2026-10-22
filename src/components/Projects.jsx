@@ -19,8 +19,8 @@ export default function Projects() {
       <div className="container">
         <div className="section-head">
           <p className="hero-eyebrow">Portfolio</p>
-          <h1>Projects built with purpose.</h1>
-          <p>Applications and systems delivered across frontend, backend, and data.</p>
+          <h1>Selected work.</h1>
+          <p>Apps and systems across frontend, backend, and data.</p>
         </div>
         <div className="work-grid">
           {projects.map((project, index) => (

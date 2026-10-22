@@ -6,7 +6,7 @@ export default function Approach() {
       <div className="container">
         <div className="section-head">
           <h2>How I work</h2>
-          <p>A simple process that keeps quality high and delivery clear.</p>
+          <p>Simple process, clear delivery.</p>
         </div>
         <div className="approach-list">
           {approach.map((item) => (

@@ -5,9 +5,9 @@ export default function Contact() {
     <section id="contact" className="section alt">
       <div className="container">
         <div className="section-head">
-          <h2>Let's build together</h2>
+          <h2>Let's work together</h2>
           <p className="contact-intro">
-            Have a product idea, legacy system, or new platform to ship? Reach out — I'd love to hear what you're building.
+            Got an idea or a product to ship? Let's talk.
           </p>
         </div>
         <div className="contact-links">

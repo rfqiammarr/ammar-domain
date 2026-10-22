@@ -6,7 +6,7 @@ export default function Services() {
       <div className="container">
         <div className="section-head">
           <h2>What I build</h2>
-          <p>End-to-end software for teams that need reliable products — not throwaway prototypes.</p>
+          <p>Reliable software, end to end.</p>
         </div>
         <div className="services-grid">
           {services.map((service, index) => (

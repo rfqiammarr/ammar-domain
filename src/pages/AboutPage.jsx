@@ -13,7 +13,7 @@ export default function AboutPage() {
         <div className="about-page-hero">
           <div className="about-page-copy">
             <p className="hero-eyebrow">About</p>
-            <h1>Hi, I'm Ammar</h1>
+            <h1>Hi, I'm Danzi</h1>
             <p className="about-lead">
               {founder.bio}
             </p>
@@ -37,7 +37,7 @@ export default function AboutPage() {
         <div className="about-focus">
           <div className="section-head">
             <h2>How I work</h2>
-            <p>A simple approach focused on clarity, quality, and shipping.</p>
+            <p>Clarity, quality, and shipping.</p>
           </div>
           <div className="focus-grid">
             {founder.highlights.map((item) => (
@@ -53,7 +53,7 @@ export default function AboutPage() {
         <div className="about-skills">
           <div className="section-head">
             <h2>Capabilities</h2>
-            <p>The stack I use to ship reliable products under Radantix.</p>
+            <p>My everyday stack.</p>
           </div>
           <div className="skill-panel-grid">
             {skillGroups.map((group) => (

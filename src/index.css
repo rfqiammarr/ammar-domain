@@ -259,10 +259,175 @@ img {
   margin-top: 1.75rem;
 }
 
-.hero-marketing .cta {
-  justify-content: center;
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.75rem;
   opacity: 0;
-  animation: fadeUp 0.75s ease 0.3s forwards;
+  animation: fadeUp 0.75s ease 0.26s forwards;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 0.55rem 1.15rem;
+  border-radius: 999px;
+  background: var(--text);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+.hero-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(105deg, var(--accent-1), var(--accent-2));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hero-btn:hover {
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(139, 124, 246, 0.3);
+}
+
+.hero-btn:hover::before {
+  opacity: 1;
+}
+
+.hero-btn-arrow {
+  transition: transform 0.2s ease;
+}
+
+.hero-btn:hover .hero-btn-arrow {
+  transform: translateX(3px);
+}
+
+.hero-btn:focus-visible {
+  outline: 3px solid rgba(91, 155, 255, 0.35);
+  outline-offset: 3px;
+}
+
+.hero-marketing .cta {
+  gap: 0.5rem;
+  margin-top: 0;
+}
+
+.hero-actions-divider {
+  width: 1px;
+  height: 1.5rem;
+  background: var(--border);
+}
+
+.hero-corner {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.75rem;
+  right: 1.75rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  opacity: 0;
+  animation: fadeIn 0.9s ease 0.4s forwards;
+}
+
+.hero-logo {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--text);
+}
+
+.hero-logo-dot {
+  background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.clock-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.75rem 0.3rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  line-height: 1;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.clock-pill:hover {
+  border-color: rgba(91, 155, 255, 0.35);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.clock-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  animation: clockPulse 2.4s ease-out infinite;
+}
+
+.clock-city,
+.clock-zone {
+  font-family: var(--font-display);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.clock-divider {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #cbd5e1;
+}
+
+.clock-time {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.03em;
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes clockPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(91, 155, 255, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(139, 124, 246, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(139, 124, 246, 0);
+  }
 }
 
 .social-link {
@@ -281,6 +446,13 @@ img {
     color 0.2s ease,
     border-color 0.2s ease,
     box-shadow 0.2s ease;
+}
+
+.hero-marketing .social-link {
+  width: 2.3rem;
+  height: 2.3rem;
+  font-size: 0.85rem;
+  box-shadow: none;
 }
 
 .social-link:hover {
@@ -1123,7 +1295,8 @@ img {
   .hero-marketing .hero-eyebrow,
   .hero-marketing h1,
   .hero-marketing .description,
-  .hero-marketing .cta {
+  .hero-actions,
+  .hero-corner {
     opacity: 1;
   }
 }
@@ -1177,7 +1350,20 @@ img {
   }
 }
 
+@media (max-width: 380px) {
+  .clock-city,
+  .clock-divider {
+    display: none;
+  }
+}
+
 @media (max-width: 640px) {
+  .hero-corner {
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+  }
+
   .nav {
     gap: 0.85rem;
   }
@@ -1186,7 +1372,11 @@ img {
   }
 
   .hero-marketing {
-    padding: 3.5rem 0 3rem;
+    padding: 5.5rem 0 3rem;
+  }
+
+  .hero-actions-divider {
+    display: none;
   }
 
   .not-found-page {

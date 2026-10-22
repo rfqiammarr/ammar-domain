@@ -7,7 +7,7 @@ export default function NotFoundPage() {
       <div className="container not-found-content">
         <p className="not-found-code">404 / Page not found</p>
         <h1 id="not-found-title">This page took a wrong turn.</h1>
-        <p className="not-found-description">The address you entered does not lead anywhere here. Let&apos;s get you back to something useful.</p>
+        <p className="not-found-description">The page you&apos;re looking for doesn&apos;t exist.</p>
         <div className="not-found-actions">
           <Link to="/" className="btn primary">
             Back to home

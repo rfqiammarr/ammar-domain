@@ -1,4 +1,4 @@
-## Ammar • Personal Website (Vite + React)
+## Danzi • Personal Website (Vite + React)
 
 Personal portfolio website built with Vite and React.
 

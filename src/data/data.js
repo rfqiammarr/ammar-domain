@@ -1,24 +1,22 @@
 export const company = {
-  name: "Radantix",
+  name: "Danzi",
   domain: "radantix.com",
-  tagline: "Hi, I'm Ammar",
-  description:
-    // "I build applications that scale — web apps, APIs, and cloud-ready systems, shipped under Radantix from idea to production.",
-    "I build applications that scale — web apps, APIs, and cloud-ready systems, shipped from idea to production.",
+  tagline: "Hi, I'm Danzi",
+  description: "I build web apps, APIs, and cloud systems — taking ideas from the first sketch all the way to production. I focus on clean code, thoughtful design, and software that's built to last.",
 };
 
 export const services = [
   {
     title: "Web Applications",
-    description: "Modern, responsive product interfaces built with Nuxt.js, Next.js, and Blazor — fast, accessible, and ready to grow.",
+    description: "Fast, responsive interfaces with Nuxt.js, Next.js, and Blazor.",
   },
   {
     title: "Backend & APIs",
-    description: "Secure .NET and Node.js services with clean architecture, authentication, and integrations that stay maintainable.",
+    description: "Secure, maintainable services with .NET and Node.js.",
   },
   {
     title: "Cloud & Delivery",
-    description: "Azure-ready deployments, CI/CD pipelines, and observability so your product ships reliably and keeps running.",
+    description: "Azure deployments, CI/CD, and monitoring that keep things running.",
   },
 ];
 
@@ -26,17 +24,17 @@ export const approach = [
   {
     step: "01",
     title: "Discover",
-    description: "Clarify goals, users, and constraints so the right thing gets built from day one.",
+    description: "Understand the goal, the users, and the limits.",
   },
   {
     step: "02",
     title: "Build",
-    description: "Ship in focused iterations with clean code, solid architecture, and continuous feedback.",
+    description: "Ship in small iterations with clean code.",
   },
   {
     step: "03",
     title: "Launch",
-    description: "Deploy with confidence — monitored, documented, and ready for the next milestone.",
+    description: "Deploy, monitor, and keep improving.",
   },
 ];
 
@@ -65,7 +63,7 @@ export const projects = [
   {
     slug: "Hotel Management",
     title: "Hotel Management Frontend",
-    description: "Hotel management frontend with Vite and JavaScript, ISR, and API routes integration.",
+    description: "Hotel management frontend with ISR and API route integration.",
     tech: ["Vite", "JavaScript", "Nuxt.js", "CI/CD"],
     imageUrl: "/img/Project/HotelManagementFrontend/1.png",
     images: ["/img/Project/HotelManagementFrontend/1.png", "/img/Project/HotelManagementFrontend/2.png", "/img/Project/HotelManagementFrontend/3.png"],
@@ -75,7 +73,7 @@ export const projects = [
   {
     slug: "realtime-dashboard",
     title: "Realtime Monitoring Dashboard",
-    description: "Interactive dashboard built with Blazor and SignalR, caching with Redis, and background jobs.",
+    description: "Live dashboard with Blazor and SignalR, Redis caching, and background jobs.",
     tech: ["Blazor", ".NET", "SignalR", "Redis", "Docker"],
     imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
     images: ["https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"],
@@ -85,7 +83,7 @@ export const projects = [
   {
     slug: "mlnet-fraud",
     title: "Fraud Detection Service",
-    description: "ML.NET model service with Python preprocessing, streaming events via Kafka, exposing gRPC/REST endpoints.",
+    description: "ML.NET model fed by Kafka events, served over gRPC and REST.",
     tech: ["ML.NET", "C#", "Python", "Kafka", "gRPC"],
     imageUrl: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1200&auto=format&fit=crop",
     images: ["https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1200&auto=format&fit=crop"],
@@ -95,7 +93,7 @@ export const projects = [
   {
     slug: "data-pipeline",
     title: "Data Pipeline Service",
-    description: "Reliable data ingestion with RabbitMQ and PostgreSQL, containerized with Docker and observed with Grafana.",
+    description: "Data ingestion with RabbitMQ and PostgreSQL, running in Docker and monitored with Grafana.",
     tech: ["Node.js", "RabbitMQ", "PostgreSQL", "Docker", "DevOps"],
     imageUrl: "https://images.unsplash.com/photo-1551281049-5a02727c622d?q=80&w=1200&auto=format&fit=crop",
     images: ["https://images.unsplash.com/photo-1551281049-5a02727c622d?q=80&w=1200&auto=format&fit=crop"],
@@ -106,25 +104,25 @@ export const projects = [
 
 export const founder = {
   name: "Rifqi Ammar Ramadhan",
-  shortName: "Ammar",
+  shortName: "Danzi",
   role: "Software Engineer",
   photo: "/img/Hero/photo_Ammar.jpg",
-  bio: "I'm Ammar. I build clean, scalable web apps with Nuxt.js and .NET under Radantix — turning complex problems into simple, reliable products.",
+  bio: "I'm a software engineer who builds clean, scalable web apps with React.js and .NET. I work across the stack — from responsive interfaces to secure APIs and cloud deployments on Azure. I care about simple, maintainable code and products that feel effortless to use. My goal is always the same: turn complex problems into reliable software that's ready for production.",
   highlights: [
     {
       step: "01",
       title: "Clarify",
-      description: "Align on goals and constraints first, so every build starts with a clear direction.",
+      description: "Agree on goals and constraints before writing code.",
     },
     {
       step: "02",
       title: "Simplify",
-      description: "Prefer clean architecture and maintainable code over complexity that slows teams down.",
+      description: "Choose clean, maintainable code over clever complexity.",
     },
     {
       step: "03",
       title: "Ship",
-      description: "Deliver in focused iterations, then refine with real feedback from production.",
+      description: "Release in small steps and improve with real feedback.",
     },
   ],
 };

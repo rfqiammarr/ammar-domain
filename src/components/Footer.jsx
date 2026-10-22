@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container">
         <p>
-          © {year} {company.name}. Building ideas that go further.
+          © {year} {company.name}. All rights reserved.
         </p>
       </div>
     </footer>
